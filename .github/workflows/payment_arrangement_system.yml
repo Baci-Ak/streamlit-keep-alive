@@ -18,7 +18,7 @@ jobs:
       # Ping Streamlit App to keep it awake
       - name: Ping Streamlit App
         run: curl -s https://payment-arrangements-system-replication-5eqnd6gemqryvumntnh4eb.streamlit.app/
-      # This is just a placeholder for other commands
+        # This is just a placeholder for other commands
       - name: Run a one-line script
         run: echo Hello, world!
 
