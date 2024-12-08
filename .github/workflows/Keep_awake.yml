@@ -1,4 +1,4 @@
-name: CI
+name: Keep Streamlit App Awake
 
 on:
   push:
