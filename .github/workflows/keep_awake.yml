@@ -2,12 +2,11 @@ name: Keep Streamlit App Awake
 
 on:
   schedule:
-    # This cron job runs every 30 minutes
     - cron: '*/10 * * * *'
 
 jobs:
   keep_awake:
     runs-on: ubuntu-latest
     steps:
-    - name: Ping Streamlit App
-      run: curl -s https://theatre-utilisation-analysis-system.streamlit.app/
+    - name: Test Run
+      run: echo "Hello, world!"
