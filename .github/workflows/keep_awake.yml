@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Ping Streamlit App
-      run: curl -s https://theatre-utilisation-analysis-system.streamlit.app
+      run: curl -s https://theatre-utilisation-analysis-system.streamlit.app/
