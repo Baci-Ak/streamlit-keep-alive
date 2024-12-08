@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 * * * *'  # Runs every 30 minutes
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Ping Streamlit App to keep it awake
+      - name: Ping Streamlit App
+        run: curl -s https://theatre-utilisation-analysis-system.streamlit.app/
+
+      # This is just a placeholder for other commands
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # More placeholder commands
+      - name: Run a multi-line script
+        run: |
+          echo Additional commands go here,
+          echo like building, testing, and deploying.
